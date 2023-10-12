@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Selectors</title>
+    <style>
+      /* Element Selector */
+      div {
+        color: aquamarine;
+      }
+
+      /* Class Selector */
+      .red {
+        background-color: red;
+      }
+
+      /* ID Selector */
+      #green {
+        background-color: green;
+      }
+
+      /* child selector */
+      div > p {
+        background-color: aqua;
+        color: black;
+      }
+
+      /* Descendant Selecot */
+      div p {
+        color: blueviolet;
+      }
+
+      /* Universal Selectors */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Psuedo Selectors */
+      a:visited {
+        color: yellow;
+      }
+
+      a:link {
+        color: green;
+      }
+
+      a:active {
+        background-color: red;
+      }
+      a:hover {
+        background-color: aliceblue;
+      }
+      p:first-child {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>I am first</p>
+      <p>I am second</p>
+    </main>
+    <div class="red">
+      I am a div
+      <p>hi saif ali khan</p>
+    </div>
+
+    <div id="green">I am another div</div>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.google.com">Facebook</a>
+  </body>
+</html>
