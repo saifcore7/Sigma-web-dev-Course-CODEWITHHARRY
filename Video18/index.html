@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background-color: aqua;
+      }
+      .box2 {
+        color: red;
+        padding: 10px;
+        margin: 25px;
+        border: 2px solid black;
+        height: 200px;
+        box-sizing: border-box;
+      }
+      .box1 {
+        color: red;
+        padding: 10px;
+        margin: 25px;
+        border: 2px solid black;
+        height: 200px;
+        box-sizing: border-box;
+      }
+    </style>
+    <title>Css Box Model</title>
+  </head>
+  <body>
+    <div class="box box1">I am a box1</div>
+    <div class="box box2">I am a box2</div>
+
+    <p>
+      margin collapse : if margins of two elements collapse then the greater
+      margin is taken and it is the concept of margin collapse
+    </p>
+
+    <h1>Calculating the total dimension of the element</h1>
+    <p>
+      The total width and height of the element is calculated with the formula:
+      Total Width = Width + Left Padding + Right Padding + Left Border + Right
+      Border + Left Margin + Right Margin Total Height = Height + Top Padding +
+      Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin
+    </p>
+  </body>
+</html>
