@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        color: red;
+      }
+      .yellow {
+        color: aqua;
+      }
+      .cred {
+        color: blue;
+      }
+      .cpurple {
+        color: purple;
+      }
+      [data-x="a"] {
+        background-color: brown;
+      }
+    </style>
+    <title>Css Specifity and Cascade</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="yellow cred cpurple" data-x="a">Css Specifity</h1>
+    </div>
+
+    <p>
+      CSS stands for Cascading Stylesheets. The cascade is the algorithm for
+      solving conflicts where multiple CSS rules apply to an HTML element. It's
+      the reason that the text of the button styled with the above CSS will be
+      purple. Understanding the cascade algorithm helps you understand how the
+      browser resolves conflicts like this. The cascade algorithm has 4 distinct
+      stages.
+      <br />
+      1. Position and order of appearance: the order in which your CSS rules
+      appear. <br />
+
+      2. Specificity: an algorithm that determines which CSS selector has the
+      strongest match. <br />
+      3. Origin: the order in which CSS appears and where it comes from, whether
+      that is a browser style, CSS from a browser extension, or your authored
+      CSS.
+      <br />
+      4. Importance: some CSS rules are weighted more heavily than others,
+      especially with the !important rule type.
+    </p>
+  </body>
+</html>
