@@ -47,5 +47,14 @@
       4. Importance: some CSS rules are weighted more heavily than others,
       especially with the !important rule type.
     </p>
+    <br />
+    Solution To calculate the specificity value of the selector
+    a.harryclass.rohan-class[href]:hover, you can break down its components:
+    Element selectors: a contributes 1 point. Class selectors: .harryclass and
+    .rohan-class each contributes 10 points, totaling 20 points. Attribute
+    selector: [href] contributes 10 points. Pseudo-class: :hover adds another 10
+    points. Add up all these values: 1 (element) + 20 (classes) + 10 (attribute)
+    + 10 (pseudo-class) = 41. So, the specificity value of the selector
+    a.harryclass.rohan-class[href]:hover will be 41.
   </body>
 </html>
